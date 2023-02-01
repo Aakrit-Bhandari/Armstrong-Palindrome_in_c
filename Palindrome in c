@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+#include <math.h>
+
+#include <stdlib.h>
+int main()
+{
+    int a, sum = 0;
+    printf("enter a num:");
+    scanf("%d", &a);
+    int x = a,z;
+    while (a!= 0)
+    {
+        z = a % 10;
+        sum=sum*10+z;
+        a = a/10;
+    }
+    if (sum==x)
+    {
+        printf("\npalindrome");
+    }
+    else
+    {
+        printf("\nnot palindrome");
+    }
+    return 0;
+
+}
